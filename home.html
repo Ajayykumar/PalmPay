@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PalmPay - Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2 id="welcomeMessage"></h2>
+
+  <script>
+    const name = localStorage.getItem("username");
+    if (!name) {
+      window.location.href = "index.html";
+    } else {
+      document.getElementById("welcomeMessage").innerText = `Hi ${name}, welcome to PalmPay!`;
+    }
+  </script>
+</body>
+</html>

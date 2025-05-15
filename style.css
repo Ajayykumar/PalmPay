@@ -1,0 +1,89 @@
+/* Global Reset & Theme */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Input Fields */
+input[type="text"] {
+  width: 280px;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f0f8ff;
+  color: #333;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+input[type="text"]::placeholder {
+  color: #888;
+}
+
+/* Buttons */
+button {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #0072e3;
+  transform: translateY(-2px);
+}
+
+/* Video Styling */
+video {
+  border-radius: 20px;
+  width: 320px;
+  height: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  margin-bottom: 20px;
+  border: 2px solid #1e90ff;
+}
+
+/* Status and Progress */
+#status, #progress {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #cde5ff;
+  text-align: center;
+}
+
+/* Welcome message */
+#welcomeMessage {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
