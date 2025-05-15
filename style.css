@@ -13,8 +13,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   padding: 20px;
+  text-align: center;
 }
 
 h2 {
@@ -26,7 +27,8 @@ h2 {
 
 /* Input Fields */
 input[type="text"] {
-  width: 280px;
+  width: 100%;
+  max-width: 320px;
   padding: 12px 15px;
   margin-bottom: 20px;
   border: none;
@@ -61,9 +63,10 @@ button:hover {
 
 /* Video Styling */
 video {
-  border-radius: 20px;
-  width: 320px;
+  width: 100%;
+  max-width: 360px;
   height: auto;
+  border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
   margin-bottom: 20px;
   border: 2px solid #1e90ff;
@@ -80,10 +83,52 @@ video {
 /* Welcome message */
 #welcomeMessage {
   font-size: 1.8rem;
-  text-align: center;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 15px 30px;
   border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  max-width: 90%;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  #welcomeMessage {
+    font-size: 1.4rem;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  input[type="text"] {
+    padding: 10px 12px;
+    font-size: 0.95rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #status, #progress {
+    font-size: 0.9rem;
+  }
+
+  #welcomeMessage {
+    font-size: 1.2rem;
+  }
 }
